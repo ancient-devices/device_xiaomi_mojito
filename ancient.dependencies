@@ -7,9 +7,9 @@
   },
   {
     "remote":      "github",
-    "repository":  "venom-stark/kernel_xiaomi_mojito",
+    "repository":  "PixelExperience-Devices/kernel_xiaomi_mojito",
     "target_path": "kernel/xiaomi/mojito",
-    "branch":      "R"
+    "branch":      "eleven"
   },
   {
     "remote":      "github",
