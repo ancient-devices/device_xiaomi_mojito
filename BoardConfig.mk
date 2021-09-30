@@ -135,9 +135,6 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=1
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
 
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
-TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
-TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := mojito_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mojito
