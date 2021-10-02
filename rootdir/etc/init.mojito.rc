@@ -61,9 +61,16 @@ on boot
     chown system system /sys/class/power_supply/battery/charging_enabled
     chown system system /sys/class/power_supply/usb/typec_cc_orientation
 
+    wait /sys/class/power_supply/battery/temp
+    start mi_thermald
+
 # Thermal
     chmod 0770 /sys/class/power_supply/battery/device/thermalcall
     chown system system /sys/class/power_supply/battery/device/thermalcall
+
+on charger
+    wait /sys/class/power_supply/battery/temp
+    start mi_thermald
 
     chmod 0777 /sys/class/leds/vibrator/state
     chmod 0777 /sys/class/leds/vibrator/duration
