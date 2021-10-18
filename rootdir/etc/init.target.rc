@@ -80,6 +80,10 @@ service mi_thermald /system/vendor/bin/mi_thermald
     group system
     seclabel u:r:mi_thermald:s0
 
+on post-fs-data
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
+
 on boot
     start rmt_storage
     start rfs_access
