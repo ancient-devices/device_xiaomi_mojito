@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# ANXCamera v185R
-$(call inherit-product, vendor/xiaomi/ANXCamera/config.mk)
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
