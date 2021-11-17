@@ -10,11 +10,5 @@
     "repository":  "PixelExperience-Devices/kernel_xiaomi_mojito",
     "target_path": "kernel/xiaomi/mojito",
     "branch":      "eleven"
-  },
-  {
-    "remote":      "github",
-    "repository":  "pcoopergit/vendor_xiaomi_ANXCamera",
-    "target_path": "vendor/xiaomi/ANXCamera",
-    "branch":      "185R"
   }
 ]
