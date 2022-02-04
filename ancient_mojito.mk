@@ -14,7 +14,6 @@ $(call inherit-product, device/xiaomi/mojito/device.mk)
 
 # Inherit some common AncientOS stuff
 ANCIENT_OFFICIAL := true
-ANCIENT_WEEABO := true
 FORCE_LAWNCHAIR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
