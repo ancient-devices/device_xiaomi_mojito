@@ -14,10 +14,12 @@ $(call inherit-product, device/xiaomi/mojito/device.mk)
 
 # Inherit some common AncientOS stuff
 ANCIENT_OFFICIAL := true
-FORCE_LAWNCHAIR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := ancient_mojito
