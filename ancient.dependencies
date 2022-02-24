@@ -33,9 +33,15 @@
    "branch"       : "twelve"
    },
    {
-   "remote"       :"github",
-   "repository"   :"ArhamDharewa/vendor_mojito",
-   "target_path"  :"vendor/xiaomi",
-   "branch"       : "main"
+   "remote"       :"gitlab.pixelexperience.org",
+   "repository"   :"android/vendor-blobs/vendor_xiaomi_mojito",
+   "target_path"  :"vendor/xiaomi/mojito",
+   "branch"       : "twelve"
+   },
+   {
+   "remote"       :"gitlab.pixelexperience.org",
+   "repository"   :"android/vendor-blobs/vendor_xiaomi_sm6150-common",
+   "target_path"  :"vendor/xiaomi/sm6150-common",
+   "branch"       : "twelve"
    }
 ]
